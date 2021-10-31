@@ -38,16 +38,18 @@ hr {
     writing-mode: vertical-rl;
     text-orientation: mixed;
     text-transform: uppercase;
-    font-size: 0.9em;
+    font-size: 12px;
+    line-height: 14.03px;
+    letter-spacing: 0.15rem;
     padding: 1rem 2rem;
-    color: lighten($black, 50%);
+    color: $black;
     transform: rotate(180deg);
   }
   .line {
     width:1px;
-    height: 50px;
+    height: 35px;
     margin: 0 auto;
-    border-right: 1px solid lighten($black, 70%);
+    border-right: 1px solid black;
   }
 }
 
@@ -57,12 +59,18 @@ hr {
   align-items: center;
   justify-content: center;
   h2 {
-    font-size: 2em;
+    font-size: 35px;
+  }
+  h5 {
+    font-size: 18px;
+    line-height: 21.04px;
+    letter-spacing: 0.15rem;
+    color: $black;
   }
   p {
     letter-spacing: 15%;
-    line-height: 21.04px;
-    font-size: 18px;
+    line-height: 15px;
+    font-size: 10px;
   }
   a {
     color: $black;
@@ -72,6 +80,10 @@ hr {
     &:hover {
       color: lighten($black,10%);
     }
+  }
+  .container {
+    border-left: 1px solid $black;
+    border-right: 1px solid $black;
   }
   .title-content {
     border-left: 1px solid $black;
@@ -91,6 +103,7 @@ hr {
     font-size: 14px;
     line-height: 16.37px;
     letter-spacing: 13.5%;
+    width: auto;
     &:hover {
       background-color: lighten($black, 10%);
     }
