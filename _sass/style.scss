@@ -5,6 +5,7 @@
 
 $black: #1E252C;
 $beige: #F4EBDE;
+$brown: #BA875C;
 $darkbeige: #7D745E;
 $montserrat: 'Montserrat', sans-serif;
 $raleway: 'Raleway', sans-serif;
@@ -170,7 +171,9 @@ hr {
   a {
     color: $black;
     // margin: 1.25em 1.5em;
-    letter-spacing: 0.1rem;
+    font-size: 12px;
+    line-height: 14.03px;
+    letter-spacing: 0.15rem;
   }
   .dropdown-toggle::after {
     border-style: none;
@@ -211,21 +214,33 @@ hr {
 }
 
 .about {
-  min-height: 100vh;
+  position: relative;
+  margin-top: 139px;
   h1 {
     font-size: 4rem;
     font-family: $yeseva-one;
   }
   a {
-    color: $black;
-    transition: 0.2s all;
+    color: $brown;
+    transition: 0.3s all;
     text-decoration: underline;
     &:hover {
-      color: darken($beige, 30%);
+      color: darken($brown, 10%);
     }
+  }
+  a.return {
+    color: black;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14.03px;
+    letter-spacing: 0.15rem;
   }
   p {
       letter-spacing: 1px;
+      line-height: 31.5px;
+      font-size: 18px;
+      font-weight: 400;
   }
 
   .content {
@@ -244,6 +259,17 @@ hr {
       opacity: 0.6;
       text-decoration: none;
     }
+  }
+}
+
+.img-bg {
+   p {
+     font-size: 10px;
+     line-height: 11.69px;
+     letter-spacing: 0.15rem;
+   }
+  .icons {
+    margin-top: 77px;
   }
 }
 
@@ -391,8 +417,11 @@ hr {
 
 .call-to-action {
   background: $black;
+  & * {
+    color: white;
+  }
   h1 {
-    font-family: $yeseva-one; font-size: 5em;
+    font-family: $yeseva-one; font-size: 70px;
     color: white;
   }
   a {
@@ -500,6 +529,31 @@ hr {
       }
     }
 
+  }
+}
+
+.side {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  p {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 14.03px;
+    letter-spacing: 0.15rem;
+    padding: 1rem 2rem;
+    color: $black;
+    transform: rotate(180deg);
+  }
+  .line {
+    width:1px;
+    height: 35px;
+    margin: 0 auto;
+    border-right: 1px solid black;
   }
 }
 
