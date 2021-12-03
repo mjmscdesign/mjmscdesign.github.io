@@ -1,0 +1,22 @@
+.footer {
+    border-top: 1px solid $black;
+
+    p {
+        letter-spacing: 0.2em;
+        font-size: 1em;
+        .smaller {
+            font-size: 0.6em;
+        }
+        .bigger {
+            font-size: 1.4em;
+        }
+    }
+    
+    a {
+        color: $black;
+        transition: 0.2s all;
+        &:hover {
+            color: darken($beige, 30%);
+        }
+    }
+}

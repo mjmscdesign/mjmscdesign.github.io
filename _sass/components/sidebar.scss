@@ -1,0 +1,26 @@
+.side {
+    position: absolute;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    p {
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        text-transform: uppercase;
+        font-size: 12px;
+        line-height: 14.03px;
+        letter-spacing: 0.15rem;
+        padding: 0 2rem;
+        margin: 0;
+        color: $black;
+        transform: rotate(180deg);
+    }
+    .line {
+        width:1px;
+        height: 35px;
+        margin: 1.5rem auto;
+        border-right: 1px solid black;
+    }
+}
